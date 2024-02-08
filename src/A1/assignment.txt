@@ -1,0 +1,25 @@
+First assignment within Java.
+
+Simple to start, read in two inputs and present as one string.
+
+Output:
+
+Welcome! Personalized Student Class Tester initialized...
+How many students would you like to add?
+2
+Creating a list with 2 spaces...
+Please enter the name of Student 1
+Gav
+Please enter the Student ID of Student 1
+12
+Student added!
+Please enter the name of Student 2
+Zip
+Please enter the Student ID of Student 2
+21
+Student added!
+
+Student list includes:
+
+Student Name: Gav - , ID Number: 12
+Student Name: Zip - , ID Number: 21
