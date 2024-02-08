@@ -1,0 +1,26 @@
+1. Convert temperatures
+
+Output:
+
+1. - Celsius to Fahrenheit
+2. - Fahrenheit to Celsius
+3. - Exit
+Select an Option
+1
+Enter Celsius value:
+23
+23.0 Celsius = 73.4 Fahrenheit
+1. - Celsius to Fahrenheit
+2. - Fahrenheit to Celsius
+3. - Exit
+Select an Option
+2
+Enter Fahrenheit value:
+64
+64.0 Fahrenheit = 17.78 Celsius
+1. - Celsius to Fahrenheit
+2. - Fahrenheit to Celsius
+3. - Exit
+Select an Option
+3
+Exiting program...
