@@ -1,0 +1,32 @@
+1. Read in figures and calculate an average
+
+Output:
+
+Please input rainfall in centimeters for month 1:
+4
+Please input rainfall in centimeters for month 2:
+2
+Please input rainfall in centimeters for month 3:
+8
+Please input rainfall in centimeters for month 4:
+6
+Please input rainfall in centimeters for month 5:
+5
+Please input rainfall in centimeters for month 6:
+3
+Please input rainfall in centimeters for month 7:
+5
+Please input rainfall in centimeters for month 8:
+1
+Please input rainfall in centimeters for month 9:
+5
+Please input rainfall in centimeters for month 10:
+3
+Please input rainfall in centimeters for month 11:
+6
+Please input rainfall in centimeters for month 12:
+3
+The average annual rainfall is 4.25 centimeters.
+
+
+2.
