@@ -29,4 +29,40 @@ Please input rainfall in centimeters for month 12:
 The average annual rainfall is 4.25 centimeters.
 
 
-2.
+2. Read in values and print as arrays
+
+Output:
+
+Enter title of movie 1
+Whiplash
+Enter genre of movie 1
+Drama
+Score the movie between 1 and 10
+8
+Enter title of movie 2
+Midsommar
+Enter genre of movie 2
+Horror
+Score the movie between 1 and 10
+7
+Enter title of movie 3
+Nightcrawler
+Enter genre of movie 3
+Thriller
+Score the movie between 1 and 10
+9
+---------- Movie 1 ----------
+Movie Title: Whiplash
+Movie Genre: Drama
+Movie Rating: 8
+Whiplash - Now playing
+---------- Movie 2 ----------
+Movie Title: Midsommar
+Movie Genre: Horror
+Movie Rating: 7
+Midsommar - Now playing
+---------- Movie 3 ----------
+Movie Title: Nightcrawler
+Movie Genre: Thriller
+Movie Rating: 9
+Nightcrawler - Now playing
