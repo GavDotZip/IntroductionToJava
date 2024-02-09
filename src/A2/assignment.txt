@@ -26,4 +26,17 @@ Select an Option
 Exiting program...
 
 
-2.
+2. Generate and Alter Arrays
+
+Output:
+
+Creating Array
+Printing Array
+Unknown 0 ?
+Unknown 0 ?
+Unknown 0 ?
+Altering Array
+Printing New Array
+Phoenix Wright 30 M
+Phoenix Wright 30 M
+Phoenix Wright 30 M
