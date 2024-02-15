@@ -1,5 +1,6 @@
 Within this assignment, the task is to create a list of contacts
-containing a name and phone number.
+containing a name and number. This list is then printed forward
+and backwards.
 
 The user is prompted which contact they wish to delete,
 and then if found, removes that contact.
