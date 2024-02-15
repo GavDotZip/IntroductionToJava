@@ -1,0 +1,7 @@
+Within this assignment, the task is to create a list of contacts
+containing a name and phone number.
+
+The user is prompted which contact they wish to delete,
+and then if found, removes that contact.
+
+The list is then updated accordingly
