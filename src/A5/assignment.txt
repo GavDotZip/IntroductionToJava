@@ -1,0 +1,42 @@
+Using abstract classes, the goal of this assignment is to create arrays containing
+sales people/agents and calculate their commissions.
+
+The user is prompted to input the sales figures for each person, and from the
+abstract classes, commission is calculated.
+
+Output:
+
+------------------- Dunder Mifflin/JLB Credit -------------------
+ First Name: Michael Last Name: Scott Employee ID: 111 Employee Number: 1 Sales: 0.0 Commission: 0.0
+ First Name: Jim Last Name: Halpert Employee ID: 222 Employee Number: 2 Sales: 0.0 Commission: 0.0
+ First Name: Dwight Last Name: Schrute Employee ID: 333 Employee Number: 3 Sales: 0.0 Commission: 0.0
+ First Name: Mark Last Name: Corrigan Employee ID: 444 Employee Number: 4 Sales: 0.0 Commission: 0.0
+ First Name: Sophie Last Name: Chapman Employee ID: 555 Employee Number: 5 Sales: 0.0 Commission: 0.0
+ First Name: Jeff Last Name: Heaney Employee ID: 666 Employee Number: 6 Sales: 0.0 Commission: 0.0
+Enter sales per team member:
+Enter the total sales for Michael Scott:
+30000
+Enter the total sales for Jim Halpert:
+24500
+Enter the total sales for Dwight Schrute:
+28000
+Enter the total sales for Mark Corrigan:
+14000
+Enter the total sales for Sophie Chapman:
+11500
+Enter the total sales for Jeff Heaney:
+16000
+Michael Scott (ID: 111)
+Total sales: 30000.0, Total commission: 3000.0
+Jim Halpert (ID: 222)
+Total sales: 24500.0, Total commission: 2450.0
+Dwight Schrute (ID: 333)
+Total sales: 28000.0, Total commission: 2800.0
+Mark Corrigan (ID: 444)
+Total sales: 14000.0, Total commission: 2100.0
+Sophie Chapman (ID: 555)
+Total sales: 11500.0, Total commission: 1725.0
+Jeff Heaney (ID: 666)
+Total sales: 16000.0, Total commission: 2400.0
+
+Process finished with exit code 0
