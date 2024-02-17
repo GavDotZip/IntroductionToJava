@@ -1,115 +1,57 @@
-// Define a package named A5
 package A5;
 
-// Define an abstract class named MySalesEmployee
-abstract class MySalesEmployee {
+import java.util.ArrayList;
+import java.util.Scanner;
 
-    // Define private instance variables
-    private String firstName;
-    private String lastName;
-    private static int employeeCounter = 0;
-    private String employeeID;
-    protected double sales;
-    protected double commission;
-    private int employeeNumber;
+public class Tester {
 
-    // Default constructor initializes instance variables with default values
-    MySalesEmployee() {
-        this.firstName = "U";
-        this.lastName = "U";
-        this.employeeID = "U";
-        this.employeeNumber = ++MySalesEmployee.employeeCounter;
+    public static void main(String[] args) {
+
+        // Initialize ArrayList
+        ArrayList<MySalesEmployee> salesTeam = new ArrayList<>();
+
+        // Create MySalesAgent objects
+        MySalesAgent msa1 = new MySalesAgent("Michael", "Scott", "111");
+        MySalesAgent msa2 = new MySalesAgent("Jim", "Halpert", "222");
+        MySalesAgent msa3 = new MySalesAgent("Dwight", "Schrute", "333");
+
+        // Create MySalesPerson objects
+        MySalesPerson msp1 = new MySalesPerson("Mark", "Corrigan", "444");
+        MySalesPerson msp2 = new MySalesPerson("Sophie", "Chapman", "555");
+        MySalesPerson msp3 = new MySalesPerson("Jeff", "Heaney", "666");
+
+        // Store MySalesAgent / MySalesPerson objects in ArrayList
+        salesTeam.add(msa1);
+        salesTeam.add(msa2);
+        salesTeam.add(msa3);
+        salesTeam.add(msp1);
+        salesTeam.add(msp2);
+        salesTeam.add(msp3);
+
+        // Print ArrayList before edits
+        System.out.println("------------------- Dunder Mifflin/JLB Credit -------------------");
+        for (MySalesEmployee employee : salesTeam) {
+            System.out.println(employee);
+        }
+
+        // Request sales figures from the user
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter sales per team member: ");
+
+        // Store sales figures from the user per employee, use to calculate commission
+        for (MySalesEmployee employee : salesTeam) {
+            System.out.println("Enter the total sales for " + employee.getFirstName() + " " + employee.getLastName() + ": ");
+            employee.sales = Double.parseDouble(scanner.nextLine());
+            employee.calculateCommission();
+        }
+
+        // Print employee name, ID, sales value, and commission
+        for (MySalesEmployee employee : salesTeam) {
+            System.out.println(employee.getFirstName() + " " + employee.getLastName() + " (ID: " + employee.getEmployeeID() + ")");
+            System.out.println("Total sales: " + employee.sales + ", Total commission: " + employee.commission);
+        }
+
+        // Close scanner
+        scanner.close();
     }
-
-    // Parameterized constructor initializes instance variables with provided values
-    MySalesEmployee(String firstName, String lastName, String employeeID) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.employeeID = employeeID;
-        this.employeeNumber = ++MySalesEmployee.employeeCounter;
-    }
-
-    // Setter methods to set values for first name, last name, and employee ID
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    public void setEmployeeID(String employeeID) {
-        this.employeeID = employeeID;
-    }
-
-    // Getter methods to retrieve values of first name, last name, and employee ID
-    public String getFirstName() {
-        return this.firstName;
-    }
-
-    public String getLastName() {
-        return this.lastName;
-    }
-
-    public String getEmployeeID() {
-        return this.employeeID;
-    }
-
-    // Override toString method to return a string representation of the object
-    @Override
-    public String toString() {
-        return " First Name: " + firstName + " Last Name: " + lastName + " Employee ID: " + employeeID + " Employee Number: " + employeeNumber + " Sales: " + sales + " Commission: " + commission;
-    }
-
-    // Abstract method for calculating commission
-    abstract public void calculateCommission();
-
-}
-
-// Define a subclass named MySalesAgent which extends MySalesEmployee
-class MySalesAgent extends MySalesEmployee {
-
-    // Default constructor sets default values for first name, last name, and employee ID
-    MySalesAgent() {
-        this.setFirstName("NA");
-        this.setLastName("NA");
-        this.setEmployeeID("NA");
-    }
-
-    // Parameterized constructor sets values for first name, last name, and employee ID
-    MySalesAgent(String firstName, String lastName, String employeeID) {
-        this.setFirstName(firstName);
-        this.setLastName(lastName);
-        this.setEmployeeID(employeeID);
-    }
-
-    // Override calculateCommission method to calculate commission for sales agent
-    public void calculateCommission() {
-        this.commission = this.sales * 0.10;
-    }
-
-}
-
-// Define another subclass named MySalesPerson which extends MySalesEmployee
-class MySalesPerson extends MySalesEmployee {
-
-    // Default constructor sets default values for first name, last name, and employee ID
-    MySalesPerson() {
-        this.setFirstName("?");
-        this.setLastName("?");
-        this.setEmployeeID("?");
-    }
-
-    // Parameterized constructor sets values for first name, last name, and employee ID
-    MySalesPerson(String firstName, String lastName, String employeeID) {
-        this.setFirstName(firstName);
-        this.setLastName(lastName);
-        this.setEmployeeID(employeeID);
-    }
-
-    // Override calculateCommission method to calculate commission for sales person
-    public void calculateCommission() {
-        this.commission = this.sales * 0.15;
-    }
-
 }
